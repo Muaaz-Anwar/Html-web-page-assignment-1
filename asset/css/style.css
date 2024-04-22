@@ -1,0 +1,196 @@
+:root{
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.wrap{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.container{
+    background-color: black;
+    min-height: 40vh;
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+}
+.hamburger{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 2px ;
+    border-radius: 2px;
+}
+.hamburger img{
+    width: 40px;
+}
+.content{
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+}
+.content .heading{
+    color: white;
+    margin: 20px auto;
+    font-family: "Handlee", cursive;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+.content .paragraph{
+    color: white;
+    margin: 20px 0px;
+    font-weight: 700;
+    font-size: 18px;
+       font-family: var(--font-family);
+}
+.button{
+    margin: 60px 0px 20px 0px;
+}
+.btn{
+    background-color: yellow;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+}
+.second-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.section{
+    width: 70vw;
+}
+.section h2{
+    margin: 20px auto;
+}
+.section p{
+    margin: 10px 0px;
+}
+.section ul{
+    margin: 20px 30px;
+}
+.pop-up{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30vw;
+    display: none;
+    background-color: rgb(192, 192, 192);
+    
+}
+.pop-up .top{
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.pop-up .bottom{
+    padding: 10px 20px;
+}
+.pop-up .bottom p{
+    margin-bottom: 20px;
+}
+.pop-up .bottom .form-input{
+    display:grid;
+    margin-bottom: 8px ;
+}
+.pop-up .bottom .form-input label{
+    margin-bottom: 6px;
+}
+.pop-up .bottom .form-input input{
+    padding: 12px 8px;
+    border: solid grey 1px;
+    border-radius: 1px;
+}
+.pop-up .bottom .form-input input:focus{
+    outline: 2px solid rgb(0, 0, 0);
+    border: solid 1px transparent;
+}
+.apply{
+    margin: 30px 0px 15px 0px;
+}
+.apply-btn{
+    padding: 10px 20px;
+}
+.cross{
+    cursor: pointer ;
+}
+@media (max-width: 425px) {
+    .menu{
+        width: 60vw !important;
+    }
+}
+.menu{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    height: 100vh;
+    width: 20vw;
+    display: none;
+}
+.menu .profile{
+    width: 100%;
+    min-height: 130px;
+    display: grid;
+    place-items: center ;
+}
+.menu .profile .img{
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.menu .cross-menu{
+    text-align: right;
+    margin: 10px 20px;
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    width: fit-content;
+    margin-left: auto;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu .menu-items ul{
+    list-style: none;
+    margin: 10px 0px;
+}
+.menu .menu-items li{
+    padding: 20px 30px;
+    margin-bottom: -2px;
+    border-top: 2px rgb(37, 37, 37) solid ;
+    border-bottom: 2px rgb(37, 37, 37) solid ;
+    
+}
+.menu .menu-items li a{
+    text-decoration: none;
+    color: white;
+}
